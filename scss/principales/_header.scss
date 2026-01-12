@@ -1,0 +1,47 @@
+@use "../utilities/mixin";
+@use"../utilities/variables";
+
+/* Header menu hamburguesa y menú */
+.hamburguesa {
+  color: variables.$color-segundo;
+  font-size: 35px;
+  display: none;
+  z-index: 4;
+}
+
+.navbar div button {
+  background-color: variables.$color-primero;  
+}
+
+
+
+header {
+  @include mixin.flex-center(flex,space-between,center);
+  background-color: variables.$color-primero;
+  padding: 10px 30px;
+  
+  nav {
+    ul {
+      display: flex;
+      column-gap: 10px;
+      list-style: none;
+      margin: 20px;
+
+      li {
+        a {
+          margin: 0;
+          padding: 0;
+          color: variables.$color-segundo;
+          text-decoration: none;
+          font-size: 15px;
+          padding: 20px;
+          margin: 20px;
+        }
+
+        &:hover a {
+          color: variables.$color-cuarto;
+        }
+      }      
+    }
+  }
+}

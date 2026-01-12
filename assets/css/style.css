@@ -1,0 +1,351 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+main .servi .container .row {
+  justify-content: center;
+}
+
+.animaciones, .animaciones .caja {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* reset de css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-image: url(../img/Gota.webp);
+}
+
+/* Header menu hamburguesa y menú */
+.hamburguesa {
+  color: white;
+  font-size: 35px;
+  display: none;
+  z-index: 4;
+}
+
+.navbar div button {
+  background-color: black;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px 30px;
+}
+header nav ul {
+  display: flex;
+  column-gap: 10px;
+  list-style: none;
+  margin: 20px;
+}
+header nav ul li a {
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 20px;
+  margin: 20px;
+}
+header nav ul li:hover a {
+  color: yellow;
+}
+
+/* Titulo de los encabezados */
+main .encabezado {
+  display: block;
+  align-items: center;
+  justify-items: center;
+}
+main .encabezado .titulo {
+  display: grid;
+  width: 70%;
+  height: 100px;
+  background-color: rgba(0, 0, 255, 0.551);
+  font-size: 40px;
+  justify-content: center;
+  align-content: center;
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px;
+  color: black;
+}
+main .encabezado .sub-titulo {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 60%;
+  height: 100px;
+  background-color: rgba(0, 0, 255, 0.418);
+  font-size: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px;
+  color: black;
+}
+main .fotos {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px;
+  gap: 20px;
+  margin: 20px 0px;
+}
+main .fotos div {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+main .fotos div img {
+  border-radius: 10px;
+  box-shadow: 0 0 10px;
+}
+
+/* Slider de html bombas con bootstrap */
+div .carousel-inner {
+  margin: 30px;
+  padding: 20px;
+  width: 40%;
+  height: 40%;
+  justify-self: center;
+}
+
+.carousel-control-prev {
+  color: black;
+  background-color: rgba(0, 0, 0, 0.331);
+}
+
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.331);
+}
+
+/* Imagen con superposicion del link html catalogos */
+section .grilla .row .uno {
+  padding: 20px;
+  position: relative;
+}
+section .grilla .row .uno img {
+  display: flex;
+  width: 100%;
+  justify-self: center;
+  border: solid 2px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px;
+  margin: 10px;
+}
+section .grilla .row .uno:hover::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(19, 9, 9, 0.225);
+}
+section .grilla .row .uno .link {
+  position: absolute;
+  color: brown;
+  bottom: 30px;
+  left: 20%;
+  z-index: 2;
+  text-decoration: none;
+  margin: 5px;
+}
+section .grilla .row .uno .link:hover {
+  color: yellow;
+  font-size: 20px;
+}
+
+/* Slider de html perifericos con bootstrap */
+.texto {
+  color: yellow;
+  background-color: rgba(0, 0, 0, 0.455);
+  font-size: 15px;
+}
+
+/* Card´s html servicios */
+main .servi .container .row .card {
+  position: relative;
+  border: solid 2px;
+  margin: 10px;
+}
+main .servi .container .row .card img {
+  margin-top: 10px;
+}
+main .servi .container .row .card h2 {
+  font-size: 25px;
+}
+main .servi .container .row .card:hover::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(19, 9, 9, 0.225);
+}
+
+.aos {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 20px;
+}
+
+.animaciones {
+  height: 100vh;
+}
+.animaciones .caja {
+  position: relative;
+  width: 280px;
+  height: 19rem;
+  background-image: linear-gradient(rgba(0, 0, 255, 0.551), yellow);
+  transition: transform 1s;
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+.animaciones .caja .arriba {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  color: black;
+  font-weight: bold;
+  font-family: cursive;
+  font-size: 25px;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 10px;
+}
+.animaciones .caja .abajo {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  color: black;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 25px;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.animaciones .caja:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.animaciones .caja:hover img {
+  transform: scale(1.2);
+}
+.animaciones .caja:hover img {
+  transition: transform 1s;
+}
+
+/* Fotter pie de pagina */
+.informacion {
+  display: grid;
+  background-color: black;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 30px 0px;
+  padding: 10px;
+}
+.informacion ul {
+  list-style: none;
+  margin-top: 80px;
+}
+
+/*Media queries para tablet */
+@media (max-width: 991px) {
+  .hamburguesa:hover {
+    position: relative;
+    font-size: 30px;
+    color: blueviolet;
+  }
+  .hamburguesa {
+    display: block;
+  }
+  .nav-link {
+    font-size: 20px;
+    color: brown;
+  }
+  .navbar-nav {
+    position: absolute;
+    background-color: rgb(241, 223, 223);
+    height: 500px;
+    width: 300px;
+    left: -100px;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+  }
+  .menu {
+    display: none;
+  }
+  main .fotos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+  }
+  div .carousel-inner {
+    padding: 20px;
+    width: 50%;
+    height: 40%;
+    justify-self: center;
+  }
+}
+/* Media queries para movil */
+@media (max-width: 500px) {
+  .hamburguesa {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+  main .fotos {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6 200);
+    margin: 20px 0px;
+  }
+  main .encabezado .titulo {
+    font-size: 30px;
+  }
+  main .encabezado .sub-titulo {
+    font-size: 30px;
+  }
+  div .carousel-inner {
+    padding: 20px;
+    width: 78%;
+    height: 40%;
+    justify-self: center;
+  }
+  .aos img {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+  }
+  .informacion ul {
+    list-style: none;
+    margin-top: 0px;
+  }
+  .informacion iframe {
+    width: 280px;
+    height: 200px;
+    overflow: hidden;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

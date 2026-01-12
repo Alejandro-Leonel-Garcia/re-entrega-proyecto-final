@@ -1,0 +1,15 @@
+@use"./utilities/extend";
+@use"./utilities/mixin";
+@use"./utilities/maps";
+@use"./utilities/variables";
+
+@use "./principales/generales";
+@use "./principales/header";
+@use "./principales/main";
+@use "./html/bombas";
+@use "./html/catalogos";
+@use "./html/perifericos";
+@use "./html/servicios";
+@use "./principales/index";
+@use "./principales/fotter";
+@use "./principales/queries";

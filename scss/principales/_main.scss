@@ -1,0 +1,56 @@
+@use "../utilities/mixin";
+@use"../utilities/variables";
+
+/* Titulo de los encabezados */
+main {
+  .encabezado {
+    display: block;
+    align-items: center;
+    justify-items: center;
+
+    .titulo {
+      display: grid;
+      width: 70%;
+      height: 100px;
+      background-color: variables.$color-titulo;
+      font-size: 40px;
+      justify-content: center;
+      align-content: center;
+      margin: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px;
+      color: variables.$color-primero;
+    }
+
+    .sub-titulo {
+      @include mixin.grid(grid, center, center);
+      width: 60%;
+      height: 100px;
+      background-color: variables.$color-subtitu;
+      font-size: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px;
+      color: variables.$color-primero;
+    }
+  }
+
+  .fotos {
+    @include mixin.grid(grid, center, center);
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    gap: 20px;
+    margin: 20px 0px;
+  }
+
+  .fotos {
+    div {
+      @include mixin.grid(grid, center, center);
+
+      img {
+        border-radius: 10px;
+        box-shadow: 0 0 10px;
+      }
+    }
+  }
+}

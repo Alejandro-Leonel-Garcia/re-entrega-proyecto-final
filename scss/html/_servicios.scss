@@ -1,0 +1,39 @@
+@use"../utilities/extend";
+
+/* Card´s html servicios */
+
+main {
+    .servi {
+        .container {
+            .row {
+                @extend %center;
+
+                .card {
+                    position: relative;
+                    border: solid 2px;
+                    margin: 10px;
+
+                    img {
+                        margin-top: 10px;
+                    }
+
+                    h2 {
+                        font-size: 25px;
+                    }
+
+                    &:hover {
+                        &::after {
+                            content: "";
+                            width: 100%;
+                            height: 100%;
+                            top: 0;
+                            left: 0;
+                            position: absolute;
+                            background-color: rgba(19, 9, 9, 0.225);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

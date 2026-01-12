@@ -1,0 +1,8 @@
+@use"../utilities/variables";
+
+/* Slider de html perifericos con bootstrap */
+.texto{
+    color: variables.$color-cuarto;
+    background-color: variables.$color-sexto;
+    font-size: 15px;
+}
