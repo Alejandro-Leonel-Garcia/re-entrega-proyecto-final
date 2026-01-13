@@ -1,5 +1,6 @@
 @use "../utilities/mixin";
 @use"../utilities/variables";
+@use"../utilities/extend";
 
 /* Titulo de los encabezados */
 main {
@@ -9,13 +10,11 @@ main {
     justify-items: center;
 
     .titulo {
-      display: grid;
+      @extend %flex-center;
       width: 70%;
       height: 100px;
       background-color: variables.$color-nav;
       font-size: 40px;
-      justify-content: center;
-      align-content: center;
       margin: 20px;
       border-radius: 15px;
       box-shadow: 0 0 10px;
@@ -23,7 +22,7 @@ main {
     }
 
     .sub-titulo {
-      @include mixin.grid(grid, center, center);
+      @extend %flex-center;
       width: 60%;
       height: 100px;
       background-color: variables.$color-nav;

@@ -1,17 +1,16 @@
 @use"../utilities/variables";
+@use"../utilities/extend";
 
 
 /* Fotter pie de pagina */
 
 .informacion {
-    display: grid;
+    @extend %flex-center;
     background-color: variables.$color-primero;
     font-size: 20px;
     color: variables.$color-segundo;
-    text-align: center;
     margin: 30px 0px;
     padding: 10px;
-
     ul {
         list-style: none;
         margin-top: 80px;

@@ -4,7 +4,7 @@ main .servi .container .row {
   justify-content: center;
 }
 
-.animaciones, .animaciones .caja {
+.informacion, .animaciones, .animaciones .caja, main .encabezado .titulo, main .encabezado .sub-titulo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,22 +67,16 @@ main .encabezado {
   justify-items: center;
 }
 main .encabezado .titulo {
-  display: grid;
   width: 70%;
   height: 100px;
   background-color: rgb(241, 223, 223);
   font-size: 40px;
-  justify-content: center;
-  align-content: center;
   margin: 20px;
   border-radius: 15px;
   box-shadow: 0 0 10px;
   color: blue;
 }
 main .encabezado .sub-titulo {
-  display: grid;
-  justify-content: center;
-  align-content: center;
   width: 60%;
   height: 100px;
   background-color: rgb(241, 223, 223);
@@ -253,11 +247,9 @@ main .servi .container .row .card:hover::after {
 
 /* Fotter pie de pagina */
 .informacion {
-  display: grid;
   background-color: black;
   font-size: 20px;
   color: white;
-  text-align: center;
   margin: 30px 0px;
   padding: 10px;
 }
