@@ -1,6 +1,15 @@
 @use"../utilities/variables";
 @use"../utilities/mixin";
 
+
+.card-title{
+    text-align: center;
+}
+
+.card-text{
+    text-align: center;
+}
+
 /* Slider de html bombas con bootstrap */
 div{
     .carousel-inner{
