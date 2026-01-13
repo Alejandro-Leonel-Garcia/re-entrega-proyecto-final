@@ -70,14 +70,14 @@ main .encabezado .titulo {
   display: grid;
   width: 70%;
   height: 100px;
-  background-color: rgba(0, 0, 255, 0.551);
+  background-color: rgb(241, 223, 223);
   font-size: 40px;
   justify-content: center;
   align-content: center;
   margin: 20px;
   border-radius: 15px;
   box-shadow: 0 0 10px;
-  color: black;
+  color: blue;
 }
 main .encabezado .sub-titulo {
   display: grid;
@@ -85,11 +85,11 @@ main .encabezado .sub-titulo {
   align-content: center;
   width: 60%;
   height: 100px;
-  background-color: rgba(0, 0, 255, 0.418);
+  background-color: rgb(241, 223, 223);
   font-size: 40px;
   border-radius: 15px;
   box-shadow: 0 0 10px;
-  color: black;
+  color: blue;
 }
 main .fotos {
   display: grid;
@@ -242,13 +242,13 @@ main .servi .container .row .card:hover::after {
 }
 .animaciones .caja:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1);
 }
 .animaciones .caja:hover img {
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 .animaciones .caja:hover img {
-  transition: transform 1s;
+  transition: transform 0.5s;
 }
 
 /* Fotter pie de pagina */

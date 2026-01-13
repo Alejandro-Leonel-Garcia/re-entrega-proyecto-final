@@ -12,25 +12,25 @@ main {
       display: grid;
       width: 70%;
       height: 100px;
-      background-color: variables.$color-titulo;
+      background-color: variables.$color-nav;
       font-size: 40px;
       justify-content: center;
       align-content: center;
       margin: 20px;
       border-radius: 15px;
       box-shadow: 0 0 10px;
-      color: variables.$color-primero;
+      color: variables.$color-contraste;
     }
 
     .sub-titulo {
       @include mixin.grid(grid, center, center);
       width: 60%;
       height: 100px;
-      background-color: variables.$color-subtitu;
+      background-color: variables.$color-nav;
       font-size: 40px;
       border-radius: 15px;
       box-shadow: 0 0 10px;
-      color: variables.$color-primero;
+      color: variables.$color-contraste;
     }
   }
 
