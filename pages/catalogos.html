@@ -8,6 +8,8 @@
     <meta name="description"
         content="Catalogos completos de todos los equipos, descripciones de usos y curvas de rendimiento, tablas de potencia y consumos">
     <meta name="keywords" content="Bombas, servicio de urgencia, mantenimiento mensual, reparaciones, automatismos">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--bootstrap css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -85,65 +87,7 @@
     <main>
         <div class="encabezado">
             <h1 class="animate__animated animate__tada titulo">CATALOGOS</h1>
-        </div>
-        <section class="servi">
-            <div class="container">
-                <div class="row">
-                    <div class="card col-12 col-md-6 col-lg-4 uno" style="width: 18rem;">
-                        <img src="../assets/img/edificio.webp" class="card-img-top" alt="edificios">
-                        <div class="card-body">
-                            <h2 class="card-title">SERVICIO MENSUAL</h2>
-                            <p class="card-text">Abono mensual atencion las 24 <br> Hs. todos los dias del año</p>
-                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                        </div>
-                    </div>
-                    <div class="card col-12 col-md-6 col-lg-4 dos" style="width: 18rem;">
-                        <img src="../assets/img/tanque.webp" class="card-img-top" alt="tanque">
-                        <div class="card-body">
-                            <h2 class="card-title">LIMPIEZA DE TANQUES</h2>
-                            <p class="card-text">Limpieza y desinfeccion de tanques para agua</p>
-                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                        </div>
-                    </div>
-                    <div class="card col-12 col-md-6 col-lg-4 tres" style="width: 18rem;">
-                        <img src="../assets/img/domestico.webp" class="card-img-top" alt="domestico">
-                        <div class="card-body">
-                            <h2 class="card-title">MANTENIMIENTOS</h2>
-                            <p class="card-text">Suministro e instalacion de equipos para casas de familia</p>                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="servi">
-            <div class="container">
-                <div class="row">
-                    <div class="card col-12 col-md-6 col-lg-4 uno" style="width: 18rem;">
-                        <img src="../assets/img/edificio.webp" class="card-img-top" alt="edificios">
-                        <div class="card-body">
-                            <h2 class="card-title">SERVICIO MENSUAL</h2>
-                            <p class="card-text">Abono mensual atencion las 24 <br> Hs. todos los dias del año</p>
-                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                        </div>
-                    </div>
-                    <div class="card col-12 col-md-6 col-lg-4 dos" style="width: 18rem;">
-                        <img src="../assets/img/tanque.webp" class="card-img-top" alt="tanque">
-                        <div class="card-body">
-                            <h2 class="card-title">LIMPIEZA DE TANQUES</h2>
-                            <p class="card-text">Limpieza y desinfeccion de tanques para agua</p>
-                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                        </div>
-                    </div>
-                    <div class="card col-12 col-md-6 col-lg-4 tres" style="width: 18rem;">
-                        <img src="../assets/img/domestico.webp" class="card-img-top" alt="domestico">
-                        <div class="card-body">
-                            <h2 class="card-title">MANTENIMIENTOS</h2>
-                            <p class="card-text">Suministro e instalacion de equipos para casas de familia</p>                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>        
     </main>
     <!-- implementacion de bootstrap -->
     <section>
@@ -167,7 +111,19 @@
             </div>
         </div>
     </section>
-
+    <!-- AOS -->
+        <div data-aos="flip-right" class="aos">        
+            <img src="../assets/img/espa1.webp" alt="espa1">
+        </div>
+        <div data-aos="flip-left" class="aos">
+            <img src="../assets/img/prisma1.webp" alt="prisma1">
+        </div>
+        <div data-aos="flip-left" class="aos">
+            <img src="../assets/img/prisma2.webp" alt="prisma2">
+        </div>
+        <div data-aos="flip-right" class="aos">
+            <img src="../assets/img/prisma3.webp" alt="prisma3">
+        </div>
     <!-- animaciones -->
     <section class="animaciones">
         <div class="caja">
@@ -199,6 +155,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>   
 </body>
 
 </html>
