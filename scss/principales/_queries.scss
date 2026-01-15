@@ -44,8 +44,9 @@
         width: 50%;
         height: 40%;
         justify-self: center;
-    }    
+    }
 }
+
 
 /* Media queries para movil */
 @media(max-width: 500px) {
@@ -83,19 +84,22 @@
         height: 40%;
         justify-self: center;
     }
-    .aos{
-        img{
+
+    .aos {
+        img {
             width: 300px;
             height: 200px;
             overflow: hidden;
         }
     }
+
     .informacion {
         ul {
             list-style: none;
             margin-top: 0px;
         }
-        iframe{
+
+        iframe {
             width: 280px;
             height: 200px;
             overflow: hidden;

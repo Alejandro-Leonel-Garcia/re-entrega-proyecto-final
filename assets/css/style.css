@@ -156,14 +156,17 @@ section .grilla .row .uno:hover::after {
 }
 section .grilla .row .uno .link {
   position: absolute;
+  background-color: rgb(241, 223, 223);
   color: brown;
   bottom: 30px;
   left: 20%;
   z-index: 2;
   text-decoration: none;
-  margin: 5px;
+  margin: 10px;
+  padding: 10px;
 }
 section .grilla .row .uno .link:hover {
+  background-color: black;
   color: yellow;
   font-size: 20px;
 }
